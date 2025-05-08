@@ -232,96 +232,83 @@
     opacity: 0.7;
   }
 
-  @media (max-width: 1024px) {
-    .header {
-        padding: 0px 20px;
-        font-size: 18px;
-    }
-  
-    .nav ul {
-        padding: 0px 10px;
-        font-size: 14px;
-    }
-  
-    .main {
-        padding: 30px 20px 0 20px;
-    }
-  }
-  
   @media (max-width: 768px) {
-    .header {
-        padding: 10px 20px;
+    .galeria_formacoes {
+      grid-template-columns: 1fr;
+      gap: 15px;
+      padding: 20px;
     }
-  
-    .nav ul {
-        gap: 15px;
-        align-items: center;
+    .formacoes {
+      max-width: 90%;
+      margin: 0 auto;
+    }
+    .formacoes img {
+      width: 100px;
     }
   }
-  
   
   @media (max-width: 480px) {
-    .header {
-        padding: 10px;
-        font-size: 15px;
-    }
-  
-    .nav ul {
-        gap: 10px;
-        padding: 0;
-    }
-  
-    .nav a {
-      font-size: 8px;
-    }
-  
-    .main{
-      width: 50%;
-    }
-  
-    .main h2{
-      font-size: 15px;
-      gap: 10px;
-      text-align: center;
-    }
-
-    .main h3{
-      font-size: 13px;
-      gap: 10px;
-      text-align: center;
-    }
-
-    .tabela_horarios{
-      max-width: 500px;
-    }
-    
-    .main p {
-      font-size: 10px;
-      text-align: center;
-    }
-
-    .galeria_formacoes{
-      width: 50%;
-      align-items: center;
-      
-    }
-  
-    .formacoes{
-      max-width: 170px;
-    }
-  
-    .formacoes img{
-      max-width: 100px;
-    }
-  
-    .formacoes p{
-      margin-right: 10px;
-      font-size: 10px;
-      text-align: center;
-    }
-  
     .footer {
-      width: 50%;
-        height: 80px;
+      padding: 20px 10px;
     }
+  
+    .header {
+      padding: 10px;
+      font-size: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
   }
+  
+  
+  .navbar {
+      width: auto;
+  }
+  
+  .nav ul {
+      display: flex;
+      gap: 20px;
+      padding: 0;
+      margin: 0;
+      justify-content: center;
+      width: auto;
+  }
+  
+  .nav a {
+      font-size: 13px;
+      text-align: center;
+      color: #d2d1d1;
+      font-weight: bold;
+  }
+  
+  
+  .icon_header {
+    display: none;
+    visibility: hidden;
+  }
+
+  .main p{
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 10px;
+  }
+
+
+  th, td{
+    font-size: 10px;
+  }
+  
+  .menu_inferior ul {
+      flex-direction: row;
+      gap: 15px;
+  }
+  
+  .formacoes h3 {
+      font-size: 1.2rem;
+  }
+  
+  .formacoes p {
+      font-size: 0.8rem;
+  }
+}
+  

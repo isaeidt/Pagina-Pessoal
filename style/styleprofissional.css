@@ -112,33 +112,43 @@ body{
   background-color: #fff;
   border: 1px solid #ddd;
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 15px;
   text-align: center;
   transition: transform 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .empregos:hover {
   transform: scale(1.05);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
 }
 
-
-
 .empregos img {
-  width: 150px;
+  width: 120px;
   height: auto;
-  border-radius: 8px;
+  border-radius: 10px;
+  margin-bottom: 15px;
 }
 
 .empregos h3 {
   margin: 15px 0;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: #333;
 }
 
+.empregos p {
+  font-size: 0.9rem;
+  color: #555;
+}
 
+#labtic{
+  margin-top: 50px;
+}
 
- 
+#radek{
+  margin-top: 5px;
+}
+
 .footer {
   grid-area: footer;
   height: 80px;
@@ -208,9 +218,9 @@ transition: opacity 0.3s ease;
   }
 
   .nav ul {
-      padding: 0px 10px;
-      font-size: 14px;
-  }
+    padding: 0px 10px;
+    font-size: 14px;
+}
 
   .main {
       padding: 30px 20px 0 20px;
@@ -218,65 +228,79 @@ transition: opacity 0.3s ease;
 }
 
 @media (max-width: 768px) {
+  .galeria_empregos {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 20px;
+  }
+  .empregos {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  .empregos img {
+    width: 100px;
+  }
+ 
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 20px 10px;
+  }
+
   .header {
-      padding: 10px 20px;
-  }
-
-  .nav ul {
-      gap: 15px;
-      align-items: center;
-  }
-
+    padding: 10px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
-@media (max-width: 480px) {
-  .header {
-      padding: 10px;
-      font-size: 15px;
-  }
+.navbar {
+    width: auto;
+}
 
-  .nav ul {
-      gap: 10px;
-      padding: 0;
-  }
+.nav ul {
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    width: auto;
+}
 
-  .nav a {
-    font-size: 8px;
-  }
-
-  .main{
-    width: 70%;
-  }
-
-  .main h2{
-    font-size: 15px;
-    gap: 10px;
+.nav a {
+    font-size: 13px;
     text-align: center;
-  }
+    color: #d2d1d1;
+    font-weight: bold;
+}
 
-  .galeria_empregos{
-    width: 50%;
-    align-items: center;
-    
-  }
 
-  .empregos{
-    max-width: 170px;
-  }
+.icon_header {
+  display: none;
+  visibility: hidden;
+}
 
-  .empregos img{
-    max-width: 100px;
-  }
+.menu_inferior a{
+  font-size: 10px;
+}
 
-  .empregos p{
-    margin-right: 10px;
-    font-size: 10px;
-    text-align: center;
-  }
+.menu_inferior ul {
+    flex-direction: row;
+    gap: 15px;
+}
+#instagram, #linkedin, #github, #email {
+  width: 20px;
+  height: auto;
+}
 
-  .footer {
-    width: 70%;
-      height: 80px;
-  }
+.empregos h3 {
+    font-size: 1.2rem;
+}
+
+.empregos p {
+    font-size: 0.8rem;
+}
 }
