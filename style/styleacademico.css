@@ -96,12 +96,14 @@
   }
 
   .tabela_horarios table {
+    width: 100%;
+    max-width: 100%;
     background-color: #bebdbd;
     border: px ;
     padding: 50px;
     margin: 50px;
     height: 200px;
-    overflow: auto;
+    overflow-x: scroll;
     border-radius: 10px;
     margin: 0 auto;
     border-collapse: separate;
@@ -288,14 +290,23 @@
   }
 
   .main p{
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 90px;
+    margin-right: 90px;
     font-size: 10px;
   }
 
 
   th, td{
     font-size: 10px;
+  }
+
+  .galeria_formacoes{
+    margin: 0;
+    max-width: 800px;
+  }
+
+  .formacoes p{
+    font-size: px;
   }
   
   .menu_inferior ul {
